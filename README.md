@@ -18,3 +18,9 @@
 在本目录运行 `python3 -m http.server 4173`，访问 http://localhost:4173。
 
 GitHub Pages 使用 main 分支的根目录发布。推送修改后会自动更新。
+
+## 视觉规范
+
+本次改版以 `DESIGN.md` 为参考：深色画布、衬线标题、整块彩色作品卡片与白色按钮。
+首屏摄影来自 https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05 ，已保存到 assets/atmosphere.jpg。
+DM Serif Display 来自 Google Fonts，许可证见 assets/FONT-LICENSE.txt。

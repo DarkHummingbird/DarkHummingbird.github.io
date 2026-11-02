@@ -4,5 +4,5 @@ const projects=[['灵感收集所',['一个关于整理与发现的示例项目�
 document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const [title,body]=projects[Number(button.dataset.project)];show('示例项目',title,body)}));
 const notes=[['先开始，再慢慢变好',['很多想法停留在脑海里，是因为我们总在等一个更合适的时机。可真正的方向，往往是在动手之后才慢慢清晰的。','先完成一个小小的版本，再根据真实的体验调整。记录遇到的问题，也记录每一次微小的进步。','这是一篇示例随笔，可以替换为你的原创文章。']],['从日常里，找回好奇心',['换一条回家的路，翻开一本陌生领域的书，留意窗外光线的变化。好奇心常常从这些小地方重新出现。','观察并不一定要得到结论。有时候，愿意多看一眼，本身就是一种收获。','这是一篇示例随笔，可以替换为你的原创文章。']],['给自己留一点空白',['日程之外，需要一些没有安排的时刻。散步、发呆，或者只是安静地喝一杯茶。','留白让我们重新听见自己的想法，也为下一次创造积蓄一点力量。','这是一篇示例随笔，可以替换为你的原创文章。']]];
 document.querySelectorAll('[data-note]').forEach(button=>button.addEventListener('click',()=>{const [title,body]=notes[Number(button.dataset.note)];show('随笔 · 示例内容',title,body)}));
-document.querySelector('#contact-button').addEventListener('click',()=>show('LET’S CONNECT','期待与你相识',['这个个人空间的联系方式尚未填写。','网站主人可以将此按钮替换为邮箱链接，或在这里补充微信、GitHub 与其他社交主页。']));
+
 document.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});document.querySelector('#year').textContent=new Date().getFullYear();
