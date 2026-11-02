@@ -1,8 +1,25 @@
-const dialog=document.querySelector('#detail');
-function show(label,title,paragraphs){document.querySelector('#detail-label').textContent=label;document.querySelector('#detail-title').textContent=title;document.querySelector('#detail-body').replaceChildren(...paragraphs.map(text=>{const p=document.createElement('p');p.textContent=text;return p}));dialog.showModal()}
-const projects=[['灵感收集所',['一个关于整理与发现的示例项目。把阅读摘录、设计灵感和日常观察放在一起，让想法之间发生新的连接。','这里可以填写你的项目背景、承担的角色、解决的问题以及最终成果，并加入真实作品链接。']],['慢一点，去看世界',['一个以自然与旅行为主题的示例摄影集。记录光线、山野和路途中的偶然相遇。','这里可以替换为你的摄影作品、旅行记录或其他创作项目。']]];
-document.querySelectorAll('[data-project]').forEach(button=>button.addEventListener('click',()=>{const [title,body]=projects[Number(button.dataset.project)];show('示例项目',title,body)}));
-const notes=[['先开始，再慢慢变好',['很多想法停留在脑海里，是因为我们总在等一个更合适的时机。可真正的方向，往往是在动手之后才慢慢清晰的。','先完成一个小小的版本，再根据真实的体验调整。记录遇到的问题，也记录每一次微小的进步。','这是一篇示例随笔，可以替换为你的原创文章。']],['从日常里，找回好奇心',['换一条回家的路，翻开一本陌生领域的书，留意窗外光线的变化。好奇心常常从这些小地方重新出现。','观察并不一定要得到结论。有时候，愿意多看一眼，本身就是一种收获。','这是一篇示例随笔，可以替换为你的原创文章。']],['给自己留一点空白',['日程之外，需要一些没有安排的时刻。散步、发呆，或者只是安静地喝一杯茶。','留白让我们重新听见自己的想法，也为下一次创造积蓄一点力量。','这是一篇示例随笔，可以替换为你的原创文章。']]];
-document.querySelectorAll('[data-note]').forEach(button=>button.addEventListener('click',()=>{const [title,body]=notes[Number(button.dataset.note)];show('随笔 · 示例内容',title,body)}));
-
-document.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});document.querySelector('#year').textContent=new Date().getFullYear();
+const list = document.querySelector('#articles');
+const search = document.querySelector('#search');
+const empty = document.querySelector('#empty');
+const showAll = document.querySelector('#show-all');
+let articles = [];
+let expanded = false;
+function render() {
+  const term = search.value.trim().toLocaleLowerCase();
+  const results = articles.filter(item => (item.title + ' ' + item.excerpt).toLocaleLowerCase().includes(term));
+  const visible = term || expanded ? results : results.slice(0, 5);
+  list.replaceChildren(...visible.map(item => {
+    const article = document.createElement('article'); article.className = 'article';
+    const category = document.createElement('p'); category.className = 'article-type'; category.textContent = '天琴LyraX · 公众号文章';
+    const title = document.createElement('h3'); const link = document.createElement('a'); link.href = item.url; link.textContent = item.title; title.append(link);
+    const excerpt = document.createElement('p'); excerpt.className = 'excerpt'; excerpt.textContent = item.excerpt + (item.excerpt.length >= 120 ? '…' : '');
+    const more = document.createElement('a'); more.className = 'read-more'; more.href = item.url; more.textContent = '继续阅读 →';
+    article.append(category, title, excerpt, more); return article;
+  }));
+  empty.hidden = results.length > 0;
+  showAll.hidden = Boolean(term) || articles.length <= 5;
+  showAll.innerHTML = expanded ? '收起文章 <span>↑</span>' : '查看全部文章 <span>↓</span>';
+}
+fetch('articles.json').then(response => { if (!response.ok) throw new Error('load'); return response.json(); }).then(data => { articles = data; render(); }).catch(() => { empty.hidden = false; empty.textContent = '文章列表暂时无法加载，请刷新页面重试。'; showAll.hidden = true; });
+search.addEventListener('input', render);
+showAll.addEventListener('click', () => { expanded = !expanded; render(); if (!expanded) document.querySelector('#writing').scrollIntoView({behavior:'smooth'}); });

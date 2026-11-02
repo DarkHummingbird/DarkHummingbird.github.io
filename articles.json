@@ -1,0 +1,72 @@
+[
+  {
+    "title": "OpenAI 把 ChatGPT 和 Codex 额度打通，开发者最怕的“双重抽水”来了",
+    "excerpt": "不少开发者已经形成了一套固定工作流：先在 ChatGPT 里讨论需求、推演架构、梳理边界条件，再打开 Codex，让它进入代码仓库读文件、修改代码、运行测试。 方案和代码属于同一项工作，额度却分布在不同入口。对同时重度使用两边的人来说，这多",
+    "url": "https://mp.weixin.qq.com/s/9RdwZ3t31KEJIEvQ2pf8dw"
+  },
+  {
+    "title": "苹果联手阿里千问：国行 Apple 智能的“端云拼图”终于拼齐了",
+    "excerpt": "在全球市场亮相整整两年之后，国行版 Apple 智能终于有了确切的落地时刻表。 2026 年 10 月 31 日清晨，苹果在官方网站的新闻中心发布公告，首批面向中国大陆用户的 Apple 智能功能，将于 11 月 4 日随最新的 iOS 开",
+    "url": "articles/article-13.html"
+  },
+  {
+    "title": "DeepSeek 这套新架构，把 Agent 的“聊天框”彻底拆了",
+    "excerpt": "过去这一年，只要你在日常工作里高频用过 Cursor、Claude Code 或者各类编程智能体，多半经历过一种特殊的疲劳。 这种疲劳来自必须同时盯住的好几个对话窗口。左边的窗口在排查接口报错，右边的窗口在重构前端组件，终端里还有一个正在跑",
+    "url": "https://mp.weixin.qq.com/s/vsU_FOaKF6AV80KqGMbpTw"
+  },
+  {
+    "title": "偷跑的 Fable 5.5 到底有多强？从斑马奔跑到 Karpathy 新动向实测看下一代旗舰之战",
+    "excerpt": "一个还没发布的模型，被一群开发者在网页端「抓」了出来。三组实测、一条隐藏指令，拼出了下一代旗舰真正的竞争维度。 最近几天，全球 AI 开发者圈子里发生了一件颇具戏剧性的事情。不少常年在网页端深度使用 Claude 的工程师和技术爱好者，突然",
+    "url": "articles/article-11.html"
+  },
+  {
+    "title": "Gemini 又拿了第一，可这一次大多数人还用不了",
+    "excerpt": "Google 又把 Gemini 送上了榜首。 10 月 28 日，Google 宣布推出 Gemini 4 Carbon。在独立评测机构 Artificial Analysis 刚刚更新的 Intelligence Index v5.0 ",
+    "url": "articles/article-10.html"
+  },
+  {
+    "title": "Genie 4而不是Gemini，Google新发布的实时交互世界模型",
+    "excerpt": "湖面上飘着一块平台，上面长着野草和蕨类植物，一棵小树向旁边伸展。一名穿着宽松棕色西装的男人站在平台上，吹着萨克斯。 镜头没有固定在演奏者身上。它可以离开平台，掠过水面，再回头看向那个人。远处是树林和薄雾，平台上一个发光的球体把暖色映在水面上",
+    "url": "https://mp.weixin.qq.com/s/8mhI4EoXQWuBw5_F8lkriw"
+  },
+  {
+    "title": "GPT-6.1 Terra 来了：便宜一半的 AI，能替你完成多少工作？",
+    "excerpt": "图 1｜GPT-6.1 Terra 官方发布封面。 一家公司每天会收到不少发票。 有人要打开邮件，下载附件，找到供应商名称、日期和金额，再把这些信息填进财务软件。如果发票格式不统一，或者有一张扫描得不清楚，还得停下来核对。 这不是一项需要每",
+    "url": "articles/article-08.html"
+  },
+  {
+    "title": "DeepSeek 养鱼火了：自己刷 B 站，还能住进你的微信",
+    "excerpt": "人还没看视频，养的 AI 已经在评论区等着了。 最近，B 站多了一批画风很统一的账号：蓝色鲸鱼娘头像，名字里带着鱼，聊完视频里的内容，还要 @ 一下自己的主人。有的总结，有的汇报，有的接别人的话。10 月 23 日，APPSO 记录了这批账",
+    "url": "https://mp.weixin.qq.com/s/2-mAgsEOn1ZtiDID5aDBOw"
+  },
+  {
+    "title": "销售、法务、财务的 AI 工作方法，Anthropic 打包开源了",
+    "excerpt": "最近，Anthropic 的 knowledge-work-plugins 登上了 GitHub Trending，Star 数也来到约 31.9k。这个名字有点长的仓库，装着的东西倒很容易理解：销售怎么跟进客户，法务怎么审合同，财务怎么对",
+    "url": "articles/article-06.html"
+  },
+  {
+    "title": "国内做 Personal Agent，Today 选择从哪里开始？",
+    "excerpt": "又一个 AI 助理，为什么还值得装？ 这个问题，Today 大概绕不过去。能写文章、查资料、做计划的工具，我们已经认识不少。再给一个聊天框，再列一串模型名字，很难解释用户为什么要重新注册账号、连接应用，还要花时间让它了解自己。 Today ",
+    "url": "articles/article-05.html"
+  },
+  {
+    "title": "模型之后，DeepSeek 又把工程经验摆上了桌",
+    "excerpt": "DeepSeek 这次放出来的东西，名字里没有新模型，也没有一个可以马上聊天的新入口。打开仓库，迎面而来的是推理、调度、通信和缓存。对大多数用户来说，这些词离聊天框有点远；可当回答迟迟不出现、长任务越跑越贵时，它们又会以最直接的方式回到面前",
+    "url": "articles/article-04.html"
+  },
+  {
+    "title": "Kimi K3.1 Pro 发布：这次升级，瞄准了更复杂的工作",
+    "excerpt": "让一个仿真人体站起来，再往前走，听上去像是给游戏角色加一段动画。但如果这个人体有骨骼、有肌肉，动作要通过动力学仿真产生，事情就复杂得多。脚往哪迈，身体重心怎么移动，手臂为什么摆不起来，每一项都可能把它重新送回地面。 在 Kimi 公布的一项",
+    "url": "https://mp.weixin.qq.com/s/Rjxmf7gLElZcG70dYdGTbg"
+  },
+  {
+    "title": "Claude Duet 开启预览，个人 Agent 开始接手持续性工作",
+    "excerpt": "Claude 有了一个新搭档，叫 Duet。 2026 年 10 月 21 日，Anthropic 宣布开放 Claude Duet 的研究预览。这款主动式 Agent 面向专业人士和小企业经营者，尝试让 Claude 从一次次对话走进持续",
+    "url": "articles/article-02.html"
+  },
+  {
+    "title": "一个 PHP 漏洞，为什么会牵动政府网站？",
+    "excerpt": "一个编程语言出了漏洞，政府网站先暂停了服务。 这听起来跨了好几层，却是 10 月 21 日发生的事。荷兰政府当天发布公告，确认包括 Overheid.nl、MijnOverheid.nl 和 DigiD 网站在内的部分站点，因 PHP 的两",
+    "url": "articles/article-01.html"
+  }
+]
