@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="湖面上飘着一块平台，上面长着野草和蕨类植物，一棵小树向旁边伸展。一名穿着宽松棕色西装的男人站在平台上，吹着萨克斯。 镜头没有固定在演奏者身上。它可以离开平台，掠过水面，再回头看向那个人。远处是树林和薄雾，平台上一个发光的球体把暖色映在水面上"><title>Genie 4而不是Gemini，Google新发布的实时交互世界模型 · 天琴LyraX</title><link rel="stylesheet" href="../style.css"></head><body><header class="top"><div class="shell top-inner"><a class="brand" href="../index.html">贾东霖 <span>· 观察与实践</span></a><nav aria-label="主导航"><a href="../index.html#writing">文章</a><a href="../index.html#projects">作品</a><a href="../index.html#skills">Skills</a><a href="https://github.com/DarkHummingbird">GitHub ↗</a></nav></div></header><main class="reading"><a class="back" href="../index.html#writing">← 返回文章列表</a><p class="reading-type">天琴LyraX / 公众号文章</p><h1>Genie 4而不是Gemini，Google新发布的实时交互世界模型</h1><p class="reading-intro">文章来自公众号写作整理，内容以写作时点为准。</p><article class="prose"><p>湖面上飘着一块平台，上面长着野草和蕨类植物，一棵小树向旁边伸展。一名穿着宽松棕色西装的男人站在平台上，吹着萨克斯。</p>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="湖面上飘着一块平台，上面长着野草和蕨类植物，一棵小树向旁边伸展。一名穿着宽松棕色西装的男人站在平台上，吹着萨克斯。 镜头没有固定在演奏者身上。它可以离开平台，掠过水面，再回头看向那个人。远处是树林和薄雾，平台上一个发光的球体把暖色映在水面上"><title>Genie 4而不是Gemini，Google新发布的实时交互世界模型 · 天琴LyraX</title><link rel="stylesheet" href="../style.css"></head><body><header class="top"><div class="shell top-inner"><a class="brand" href="../index.html">贾东霖 <span>· 观察与实践</span></a><nav aria-label="主导航"><a href="../index.html#writing">文章</a><a href="../index.html#projects">作品</a><a href="../index.html#skills">Skills</a><a href="https://github.com/DarkHummingbird">GitHub ↗</a></nav></div></header><main class="reading"><a class="back" href="../index.html#writing">← 返回文章列表</a><p class="reading-type">天琴LyraX / 公众号文章</p><h1>Genie 4而不是Gemini，Google新发布的实时交互世界模型</h1><p class="reading-intro">文章来自公众号写作整理，内容以写作时点为准。</p><p class="reading-meta"><span>约 6,177 字</span><span>阅读约 16 分钟</span></p><nav class="toc" aria-label="文章目录"><p class="toc-title">目录</p><ol><li><a href="#s1">从几个场景，认识 Genie 4</a></li><li><a href="#s2">从生成一个结果，到实时导演一场戏</a></li><li><a href="#s3">让世界有声音，也让人物有反应</a></li><li><a href="#s4">这个“实时导演”可以用在哪里？</a></li><li><a href="#s5">能试出想法，还不等于能稳定交付</a></li><li><a href="#s6">如果让机器人先在这个世界里行动</a></li><li><a href="#s7">世界先动起来，创作者再走进去</a></li></ol></nav><article class="prose"><p>湖面上飘着一块平台，上面长着野草和蕨类植物，一棵小树向旁边伸展。一名穿着宽松棕色西装的男人站在平台上，吹着萨克斯。</p>
 <p>镜头没有固定在演奏者身上。它可以离开平台，掠过水面，再回头看向那个人。远处是树林和薄雾，平台上一个发光的球体把暖色映在水面上。</p>
 <p>打开声音，还能听到风、水和萨克斯的演奏。</p>
 <p>这是 Google DeepMind 给新模型 Genie 4 展示的一段场景。它看起来像一段影像，但创作者面对的并不只是一条已经剪好的视频。按照 Google 的介绍，<strong>用户可以在场景运行时移动镜头，也可以输入文字，调整天气、增加人物或物体，再看世界如何继续变化。</strong></p>
@@ -7,7 +7,7 @@
 <p>10月27日，Google DeepMind 发布了这个实时交互世界模型。它的名字是 <strong>Genie 4</strong>，不是 Gemini 4。Gemini 会在幕后参与理解、规划和引导，而 Genie 的任务，是让一个可以探索、会随输入变化的世界出现在眼前。</p>
 <p>这次更新里，<strong>声音也成了世界的一部分</strong>：环境声、音乐，乃至人物之间的对话，都可以与场景一起生成。</p>
 <p>如果过去使用生成式 AI 创作的常见方式是“写提示词，等待结果，再决定要不要重来”，Genie 4 展示了另一种方向：<strong>先把场景放出来，让它动起来，然后一边观察，一边继续导演。</strong></p>
-<h2>从几个场景，认识 Genie 4</h2>
+<h2 id="s1">从几个场景，认识 Genie 4</h2>
 <p>Google 在发布页面放了不少演示。它们的共同点是：生成的不是一张固定的图，而是一个会随着镜头和输入继续变化的场景。</p>
 <figure view-type="Preview"><source name="南极热气球.mp4" mime="video/mp4" origin-height="720.000000" origin-width="1280.000000" size="2923765" token="SxfjbCJrToszUux1deGc1V2ynqf"/></figure>
 
@@ -23,7 +23,7 @@
 <p>按照 DeepMind 的说明，这些视频来自实时交互录屏，操作者使用键盘和鼠标控制导航与镜头，通过文字提示引导场景。不过，发布页面也注明视频片段经过缩短，用于展示效果。它们能帮助我们理解产品想做什么，还不能单凭几段画面判断普通用户每次操作都能得到什么结果。</p>
 <p>所谓“世界模型”，在这里可以先不用理解成一个复杂术语。你可以把它看作一套持续生成场景变化的系统：给它一个环境，让它呈现眼前的画面；当人移动视角或者提出新要求时，它继续生成接下来发生的内容。</p>
 <p>它和看一段普通视频的体验区别在于，你不是只能等画面播放到结尾。Google 希望你能走进这个场景，影响它往哪里发展。</p>
-<h2>从生成一个结果，到实时导演一场戏</h2>
+<h2 id="s2">从生成一个结果，到实时导演一场戏</h2>
 <p>过去几年，AI 图像和视频工具已经把“描述一个画面”变成了很多人的日常操作。但在一个场景里，创作者真正要决定的事情往往比一句描述多得多。</p>
 <p>以湖上的演奏者为例。场景需要什么样的天气？镜头先靠近人物，还是先展示湖面？演奏者在画面中央，还是只出现在远处？声音应该是完整配乐，还是只保留现场的风、水和乐器？</p>
 <p>如果这些决定只能在生成前一次性写完，创作者就要先在脑海中预测所有选择的效果。看到结果后，如果镜头不合适，又需要重新组织提示词，再等待新一轮结果。</p>
@@ -34,7 +34,7 @@
 <p>这里的“导演”是对交互方式的比喻。它并不意味着 Genie 4 已经具备电影制作软件里所有精确控制能力。Google 展示的是自然语言与实时探索带来的新可能；一段场景能否严格按照创作者意图反复执行，还要看具体任务和后续产品能力。</p>
 <p>官方提示词也说明，现实中的创作并不是输入“给我一个湖”就结束了。萨克斯场景的描述细到平台上的植物、发光球体、镜头与人物的关系、画面颗粒感和声音来源。它要求保持纪录片式质感，还特别说明不要加入场景中不存在的背景音乐。</p>
 <p>这些约束很有意思。它们说明，提示词仍然是创作的一部分，但创作者想要控制的对象正在变多：不仅是主体和风格，还有摄影机、空间、动作，以及你希望在现场听到什么。</p>
-<h2>让世界有声音，也让人物有反应</h2>
+<h2 id="s3">让世界有声音，也让人物有反应</h2>
 <p>对一个可探索的场景来说，声音会改变人对它的感受。</p>
 <p>湖面上有没有风，萨克斯声是从平台传来还是像一段后期配乐，都会影响这个世界给人的距离感。骑龙的场景里，翅膀和风声也在帮助观众感受速度和运动。</p>
 <p>Google 称 Genie 4 是其首个原生生成音频的实时世界模型。它可以随场景生成环境声和音乐，还引入了互动对话：<strong>人物可以根据用户输入或世界里发生的事件，实时作出回应。</strong></p>
@@ -43,7 +43,7 @@
 <p>但“能生成声音”和“声音完全准确、可精确控制”之间还有距离。DeepMind 自己也把实时音频准确性列为仍在研究和改进的问题。想要用它做正式作品，还需要知道声音是否稳定、对白能否按要求修改，以及输出能否顺利进入后续制作流程。</p>
 <p>人物也是如此。Google 展示了演奏者的呼吸、手指和身体动作，也展示了车站里等待和移动的人群。越是贴近日常的动作，越容易让观众注意到细微的不自然：一个人刚刚站过的位置是否保持一致，人物与物体接触时是否合理，镜头转回来后人还在不在。</p>
 <p>换句话说，让人物出现是一回事，让他们在持续变化的世界里始终保持可信，是更长的一道题。</p>
-<h2>这个“实时导演”可以用在哪里？</h2>
+<h2 id="s4">这个“实时导演”可以用在哪里？</h2>
 <p>Google 邀请了一批来自创意、新闻、教育、游戏和工程领域的可信测试者，探索 Genie 4 可能进入哪些工作流程。DeepMind 把目前的反馈归纳为几个方向。</p>
 <p>最容易想象的是影视预演。</p>
 <p>一场戏拍摄前，导演和团队可能需要讨论镜头从哪里进入、人物站在哪里、光线要什么感觉。过去可以用文字、分镜、照片、场景搭建或其他预演工具，把这些想法逐步讲清楚。</p>
@@ -69,7 +69,7 @@
 <p>再看档案照片的例子。对教育工作者来说，能围绕一张照片探索空间，可能让学生更愿意提出问题：画面之外是什么？人物可能从哪里走来？这类问题可以成为讨论的起点，但生成的答案需要回到照片、文献和其他材料中核对。创意用途允许探索多种可能，涉及历史事实时，材料和想象的边界就必须呈现出来。</p>
 <p>对使用者而言，实时还意味着可以更快发现问题。画面出现之后，创作者不必只评价最后一帧，还可以观察镜头移动时哪些关系变了、哪一段声音不合适、人物动作是否破坏了原本想要的氛围。这些观察能够直接影响下一条指令，也让一次生成变成连续的选择过程。</p>
 <p>但连续修改也可能带来成本：模型需要处理新的指令，用户需要判断结果，而场景本身也可能逐渐偏离最初的设定。怎样回到某个较满意的状态、比较不同版本，或者保留已确定的部分，都会影响创作者能否把试验变成可重复的工作。Google 尚未完整说明这些工作流，等产品开放后，可以把它们作为实际体验的重点。</p>
-<h2>能试出想法，还不等于能稳定交付</h2>
+<h2 id="s5">能试出想法，还不等于能稳定交付</h2>
 <p>世界模型要真正进入工作流，除了能生成一个让人眼前一亮的场景，还得处理一个很现实的问题：当创作者继续操作时，这个世界能不能记住自己刚刚是什么样。</p>
 <p>假设镜头从湖上的平台移开，再绕回来，平台上的树、演奏者和发光球体是否还在原来的位置？如果先加了一个人物，后来又改了天气，这个人物是否会持续存在？创作者改动得越多，系统需要维持的关系也越多。</p>
 <p>DeepMind 承认，随着模拟持续、经过多次复杂提示词修改，或者用户在场景中不断移动，<strong>视觉细节和物体持续性可能发生变化或漂移</strong>。这直接影响创作者能否围绕同一个场景反复试验。</p>
@@ -80,7 +80,7 @@
 <p>这些问题决定了它能在工作流里承担哪一段。做头脑风暴时，某个细节偶尔变化，也许还能接受；要把一个场景交给多人协作、反复修改并用于正式制作，要求就会高得多。</p>
 <p>**目前 Genie 4 仍是面向可信测试者的研究预览。**Google 计划之后先向 Project Genie 中的 Google AI Ultra 订阅用户，以及 Gemini API 和 Google AI Studio 的早期合作伙伴开放。具体时间、地区和价格，还需要等进一步公布。</p>
 <p>Google 还表示，Genie 4 生成的视频和音频将包含 SynthID 隐形数字水印，用于帮助识别 AI 生成内容。随着场景越来越接近真实影像，素材从哪里来、哪些内容经过生成，也会成为创作者和发布平台需要处理的问题。</p>
-<h2>如果让机器人先在这个世界里行动</h2>
+<h2 id="s6">如果让机器人先在这个世界里行动</h2>
 <p>在创作之外，Google 还展示了一个值得留意的实验：让人形机器人在模拟场景中下跳棋。</p>
 <p>这个案例里，Gemini 4 Argon 先把任务拆成步骤，再把步骤以文字形式交给 Genie 4；Genie 4 随着这些提示生成模拟过程。画面中出现的是 Apptronik 的 Apollo 人形机器人。</p>
 <figure view-type="Preview"><source name="Apollo下棋模拟.mp4" mime="video/mp4" origin-height="720.000000" origin-width="1280.000000" size="1011089" token="YSs8bpiWuoMPgLxqhDecD5VjnLf"/></figure>
@@ -88,9 +88,17 @@
 <p>这段演示呈现了 Google 所说的一个方向：语言模型提供任务规划，世界模型生成环境和变化。除了让人进入场景进行创作，未来也可以探索让 AI Agent 在模拟环境中尝试任务，观察行动之后会发生什么。</p>
 <p>不过，**这里展示的是模拟，并不是现实中的 Apollo 已经凭借这套系统完成了同样的棋局。**要让模拟真正帮助机器人训练，还需要解决动作、物理与现实环境之间的差距，也需要验证模型生成的结果能否可靠地支持任务判断。</p>
 <p>对 Genie 4 来说，这是一条更远的路；对本文讨论的创作场景来说，它也让同一套能力显出了另一面：世界不仅可以供人观看和调整，还可能成为其他 AI 系统行动的地方。</p>
-<h2>世界先动起来，创作者再走进去</h2>
+<h2 id="s7">世界先动起来，创作者再走进去</h2>
 <p>回到湖上的演奏者。</p>
 <p>传统创作里，一场戏往往需要先决定场地、人物、镜头、声音，再通过拍摄和后期逐步组合。生成式工具改变了其中一些环节，而 Genie 4 给出的想象是：<strong>先让一个场景出现，创作者走进去看一看，再决定下一步怎么调整。</strong></p>
 <p>这个过程仍然需要人提出想法、判断结果、选择方向。实时生成也没有消除创作中的取舍：镜头该看什么，声音该留下什么，人物的反应是否符合故事，仍然要由创作者决定。</p>
 <p>Genie 4 当前的演示让这些决定有了新的尝试方式。接下来，当更多人能真正用上它，场景能否保持一致、修改能否足够准确，以及生成结果能否进入实际工作流程，会决定这个“实时导演”能走多远。</p>
-</article><div class="reading-end"><a href="../index.html#writing">← 继续阅读其他文章</a><a href="https://github.com/DarkHummingbird">GitHub ↗</a></div></main><footer class="shell footer">© 贾东霖 · 观察、整理、创造</footer></body></html>
+</article><aside class="author-card">
+<img src="../assets/avatar.jpg" alt="贾东霖" width="640" height="640">
+<div>
+<p class="author-name">贾东霖</p>
+<p class="author-role">AI 产品经理 ｜ Agent 开发</p>
+<p class="author-bio">做过海外 AIGC 短剧平台「引幕 InReel」的评测体系与模型选型；独立做了一录即玩、科研星舰、续章工坊三个 Agent 产品。</p>
+<p class="author-links"><a href="../index.html#projects">精选作品 ↗</a><a href="https://github.com/DarkHummingbird" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:1194867321@qq.com">邮箱</a></p>
+</div>
+</aside><nav class="pager" aria-label="上一篇与下一篇"><a href="article-10.html">← 上一篇：Gemini 又拿了第一，可这一次大多数人还用不了</a><a class="pager-next" href="article-08.html">下一篇：GPT-6.1 Terra 来了：便宜一半的 AI，能替你完成多少工作？ →</a></nav><div class="reading-end"><a href="../index.html#writing">← 继续阅读其他文章</a><a href="https://github.com/DarkHummingbird">GitHub ↗</a></div></main><footer class="shell footer">© 贾东霖 · 观察、整理、创造</footer></body></html>
